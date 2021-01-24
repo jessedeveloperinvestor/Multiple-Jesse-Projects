@@ -9,7 +9,7 @@ print("Check out: 'https://jessealvesleitesoftwares.company.site'")
 
 #ALGORITHMS
 y = 0
-while y < 100:
+while y < 1:
     i = input()
     if i == 'medical advice':
         print("write/say basic symptoms, emergence, first aid, poisons, diagnosis(symptoms in alphabetical order), tests(disease) treatment(disease), laboratory tests, advanced symptoms, derived diseases,  immortal")
@@ -42,5 +42,5 @@ while y < 100:
         print("2 to 7 minutes")
     else:
         print('Done')
-    y = y + 1
-time.sleep(300)
+    y = y - 1
+time.sleep(1)
