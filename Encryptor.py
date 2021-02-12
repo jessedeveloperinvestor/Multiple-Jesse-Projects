@@ -1,4 +1,5 @@
 #Jesse's Encriptor
+#demo version
 
 import time
 print("Input single characters multiple times, then type 'ok' and hit enter")
