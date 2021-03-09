@@ -1,3 +1,4 @@
+-- schema
 create table y
     ([a] varchar(13), [b] varchar(57));
 insert into y
@@ -7,8 +8,8 @@ VALUES
     ('1', '01'),
     ('2', '10');
     
-    
-    -- great
+
+-- mysql
 select
 a,
 b
