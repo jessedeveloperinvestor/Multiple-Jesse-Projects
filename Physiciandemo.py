@@ -25,12 +25,16 @@ def t():
 
 #NAME OF SOFTWARE
 #pip install pyfiglet
-import pyfiglet
-word='Physician'
-pyfiglet.print_figlet(word,font='digital')
-pyfiglet.print_figlet(word,font='stop')
-all_fonts=pyfiglet.FigletFont.getFonts()
-        
+try:
+    import pyfiglet
+    word='Physician'
+    pyfiglet.print_figlet(word,font='digital')
+    pyfiglet.print_figlet(word,font='stop')
+    all_fonts=pyfiglet.FigletFont.getFonts()
+except:
+    print('+-+-+-+-+-+-+-+-+-+\n|P|h|y|s|i|c|i|a|n|\n+-+-+-+-+-+-+-+-+-+')
+    print(' ______  _                _       _\n(_____ \| |              (_)     (_)\n _____) ) | _  _   _  ___ _  ____ _  ____ ____\n|  ____/| || \| | | |/___) |/ ___) |/ _  |  _ \ \n| |     | | | | |_| |___ | ( (___| ( ( | | | | |\n|_|     |_| |_|\__  (___/|_|\____)_|\_||_|_| |_|\n              (____/')
+    
 #MEETING
 o="Hi, I'm Physician"
 print(o)
