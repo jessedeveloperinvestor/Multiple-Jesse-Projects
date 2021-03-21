@@ -23,6 +23,14 @@ def t():
     except:
         y='\n'
 
+#NAME OF SOFTWARE
+#pip install pyfiglet
+import pyfiglet
+word='Physician'
+pyfiglet.print_figlet(word,font='digital')
+pyfiglet.print_figlet(word,font='stop')
+all_fonts=pyfiglet.FigletFont.getFonts()
+        
 #MEETING
 o="Hi, I'm Physician"
 print(o)
