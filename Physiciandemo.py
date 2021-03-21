@@ -1,25 +1,32 @@
 #PHYSICIAN
-from translate import Translator
 #This is a demo version
-
-#MEETING
-print('Hi, type and hit enter for the number of your language: English 1, Português 2, Español 3')
-a='english'
-i = input()
-if i == '1':
-    b='english'
-if i == '2':
-    b='pt-br'
-if i == '3':
-    b='español'
+try:
+    from translate import Translator
+    print('Hi, type and hit enter for the number of your language: English 1, Português 2, Español 3.If you are getting text in a language different than English, so just type English version (both versions of text are in order/sequence)')
+    a='english'
+    i = input()
+    if i == '1':
+        b='english'
+    if i == '2':
+        b='pt-br'
+    if i == '3':
+        b='español'
+except:
+    a=''
 def t():
-    set = Translator(from_lang=a, to_lang=b)
-    y=set.translate(o)
-    print(y)
+    try:
+        set = Translator(from_lang=a, to_lang=b)
+        y=set.translate(o)
+        print('\n')
+        print(y)
+        print('\n\n')
+    except:
+        y='\n'
+#MEETING
 o="Hi, I'm Physician"
 print(o)
 t()
-o="If you are getting text in a language different than English, so just type English version (both versions of text are in order/sequence). Write 'exit' to exit the software"
+o="Write 'exit' to exit the software"
 
 print(o)
 t()
@@ -70,4 +77,3 @@ while True:
         o='Done'
     print(o)
     t()
-    print('\n')
