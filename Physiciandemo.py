@@ -22,6 +22,7 @@ def t():
         print('\n\n')
     except:
         y='\n'
+
 #MEETING
 o="Hi, I'm Physician"
 print(o)
