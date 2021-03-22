@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form>
+		<label>First name: <input type='text' name='firstname' placeholder='firstname' required></label>
+		<label>Last name: <input type='text' name='lastname' placeholder='lastname' required></label><br><br>
+		<label>Male <input type='radio' name='gender' placeholder='male'></label>
+		<label>Female <input type='radio' name='gender' placeholder='female'></label>
+		<label>Other <input type='radio' name='gender' placeholder='other'></label><br><br>
+		<label>Email: <input type='email' name='email' placeholder='your email' required></label>
+		<label>Password: <input type='password' name='password' placeholder='your password'
+		pattern='{5,10}' required title='Please enter a password of lengh 5 to 10' required></label><br><br>
+		<label for=''>Birthday: </label>
+		<select id='birthday' name='Month'>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+			<option>Jun</option>
+			<option>Jul</option>
+			<option>Aug</option>
+			<option>Sep</option>
+			<option>Oct</option>
+			<option>Nov</option>
+			<option>Dec</option>
+		<label>Day: </label>
+		<label>Day: <input type='text' name='day' placeholder='birthday day' required></label>
+		<label>Year: <input type='number' name='year' placeholder='birthday year' required></label><br><br>
+		<label>I agree with the terms and conditions <input type='checkbox' name='check'></label><br><br>
+		<input type='submit' name='submit'>
+
+	</form>
+</body>
+</html>
