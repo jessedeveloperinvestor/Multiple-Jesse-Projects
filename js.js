@@ -2,7 +2,7 @@
 /*
 this is a comment
 */
-console.log('Are you ok?')
+console.log('Are you ok?');
 var y='hi'
 var n=0
 var ax=y
@@ -35,25 +35,22 @@ break;
 default: 'sun';
 break;
 }
-console.log(day)
+console.log(day);
+console.log('');
 
-//
+//loops
 
-function exibir(){
- var mes = parseInt(document.getElementById("numero").value);
- 
- switch(mes){
-  case 1:  alert("Janeiro");
-  case 2:  alert("Fevereiro");
-  case 3:  alert("Março");
-  case 4:  alert("Abril");
-  case 5:  alert("Maio");
-  case 6:  alert("Junho");
-  case 7:  alert("Julho");
-  case 8:  alert("Agosto");
-  case 9:  alert("Setembro");
-  case 10: alert("Outubro");
-  case 11: alert("Novembro");
-  case 12: alert("Dezembro");
- }
-}
+let lang=['python','javascript','css','html']
+lang.forEach(item => console.log(item));
+
+for(var n=1;n<=10;n++)
+  console.log(n);
+
+var a=[1,2,3,4];
+a.forEach(item => console.log('array '+item));
+
+for(var item in a)
+  console.log(item);
+
+for(var item of a)
+  console.log(item);
