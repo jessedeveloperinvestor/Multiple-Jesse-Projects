@@ -1,20 +1,125 @@
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<p style='color:red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+h2,h5{
+	/*this is a comment*/
 
-	<p style='color:gray'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</body>
-</html>
+	color: orange;
+}
+
+#a1{/*id selector*/
+	color:gray;
+}
+
+.b1{/*class selector*/
+	color:pink;
+}
+
+*{
+	font-size:12;
+}
+
+#x1 .y1{/*affects all inside the div*/
+	color:blue;
+}
+
+#x2 > .y1{/*affects only the immediate child inside the div*/
+	color:blue;
+}
+
+h3{
+	font-size:20;
+	color:pink;
+}
+
+h3:hover{/*hover means passing the mouse over*/
+	font-size:22;
+	color:gray;
+}
+
+/*COLORS*/
+
+
+/*COLORS IN RGB*/
+
+.red{
+	color:rgb(255,0,0);
+}
+
+.blue{
+	color:rgb(0,0,255);
+}
+
+.green{
+	color:rgb(0,255,0);
+}
+
+.fadingblue{
+	color:rgb(0,0,255,.5);
+}
+
+/*COLORS IN HEXADECIMAL*/
+
+.redc{
+	color:#ff0000;
+}
+
+.bluec{
+	color:#0000ff;
+}
+
+.greenc{
+	color:#00ff00;
+}
+
+/*BACKGROUND*/
+
+
+*{
+	background:#111111;
+}
+
+p{
+	background: url('https://relaxed-dijkstra-f2b25b.netlify.app/Tech.png');
+	background-size:30% 100%;
+	background-position:left;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+/*BORDER*/
+
+#bb{
+	color:#ffffff;
+	border-style:solid;/*solid, dashed or dotted*/
+	border-color:blue;
+	border-width:2px 5px;/*2px in top and bottom and 5 on left and right*/
+	border-radius:10%;
+}
+
+#br{
+	color:#ffffff;
+	border: 2px dashed red;
+	border-radius:5%;
+}
+
+/*BOX MODEL*/
+
+
+/*#box2{
+	border-style:dashed;
+	border-color:green;
+	border-width: 2px 5px;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}*/
+
+#box{
+	background: url('https://relaxed-dijkstra-f2b25b.netlify.app/Tech.png');	
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	border:2px dotted green;
+	margin:30px;
+	padding:30px;
+	width:40%;
+}
